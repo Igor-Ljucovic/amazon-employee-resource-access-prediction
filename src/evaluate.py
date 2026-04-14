@@ -34,7 +34,7 @@ def confusion_matrix(y_test, y_pred):
 
 def roc_auc(model, x_test, y_test):
     if hasattr(model, "predict_proba"):
-        y_proba = model.predict_proba(x_test)[:, 1]  # uzima verovatnoću za pripadanje klasi 1 za svaki red u test set-u
+        y_proba = model.predict_proba(x_test)[:, 1] 
         auc = roc_auc_score(y_test, y_proba)
         print(f"ROC-AUC  : {auc:.4f}")
 

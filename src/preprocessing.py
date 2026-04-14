@@ -8,8 +8,6 @@ def create_sample(sample_size, csv_location, new_sample_name):
     df = pd.read_csv(csv_location)
     df = df.sample(n=sample_size, random_state=config.random_state)
 
-    # index=False jer necemo pandas dataframe-ovu index kolonu
-    # snimi samo ako fajl ne postoji
     if not os.path.exists(new_sample_name):
         df.to_csv(new_sample_name, index=False)
         print(f"File {new_sample_name} saved successfully")
@@ -34,7 +32,6 @@ def remove_outlier_rows(df, column_name, most_common_values_to_preserve):
 
 
 def remove_columns(df, columns_to_remove):
-    # normalizovanje kolona, da ne bude bitno da li je uneto malim ili velikim slovima
     cols_to_remove_lower = [c.lower() for c in columns_to_remove]
     cols_to_keep = [col for col in df.columns if col.lower() not in cols_to_remove_lower]
     return df[cols_to_keep]

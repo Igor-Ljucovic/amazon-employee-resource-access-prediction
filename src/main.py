@@ -16,7 +16,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from scipy.stats import chi2_contingency
 
-train = pd.read_csv("train.csv")
+train = pd.read_csv("data/train.csv")
 train = prep.remove_columns(train, ["ROLE_CODE"])
 # train = prep.remove_columns(train, ["MGR_ID"])
 

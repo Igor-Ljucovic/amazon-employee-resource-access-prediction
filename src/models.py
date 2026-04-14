@@ -9,7 +9,7 @@ def run(models, x_train, x_test, y_train, y_test):
         start = time.time()
         model.fit(x_train, y_train)
         y_pred = model.predict(x_test)
-        print(f"{human_readable_model_name(model)} finished, ⏱ Duration: {time.time() - start:.2f} seconds")
+        print(f"{human_readable_model_name(model)} finished, Duration: {time.time() - start:.2f} seconds")
         evaluate.all_metrics(model, x_train, x_test, y_test, y_pred)
 
 
