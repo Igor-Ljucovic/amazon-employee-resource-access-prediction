@@ -1,11 +1,30 @@
-**Amazon employee resource access prediction | Python, Jupyter, Scikit-learn, Pandas, MatPlotLib, Numpy**
+# Amazon Employee Resource Access Prediction
 
--Developed machine learning classification models to predict whether an employee should be granted access to a resource. 
-Wrote a detailed report about them. Achieved ROC-AUC of 0.88
+A machine learning project used for predicting whether an employee should be granted access to a company resource based on organizational and employee-related data.
 
--"_Jupyter analysis.ipynb" file is a detailed Jupyter file report of the entire process of implementing the machine learning models (preprocessing, creating models, evaluation)
+---
 
--"_Report.pdf" file is a 5 page summary of this project and what it has accomplished 
+## Project Highlights
 
+- Applied data preprocessing and feature analysis prior to model training
+- Built multiple machine learning models for binary classification of employee access requests
+- Performed hyperparameter tuning across multiple algorithms
+- Evaluated and compared model performance using ROC-AUC and other classification metrics
+- Achieved a best ROC-AUC score of 0.88
+- Wrote a detailed technical report analyzing the 3 best-performing models
+- Wrote a Jupyter notebook about the whole implementation and experimentation process
 
-Note: I used this project to learn more about Python and its machine learning and data science libraries by building and evaluating predictive models.
+---
+
+## Tech Stack
+
+- **Programming Language:** Python
+- **Libraries & Frameworks:** Scikit-learn, Pandas, NumPy, Matplotlib
+- **Tools:** Jupyter Notebook
+
+---
+
+## Additional Notes
+
+The full implementation and experimentation process is documented in the Jupyter notebook file located in the `/notebooks` folder.  
+A summarized technical report of the project and final results is included in the `/docs` folder.
